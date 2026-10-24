@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grade 10 Physics — Unit 1 Quiz</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7; color: #1f2937; line-height: 1.5;
+  }
+  main { max-width: 850px; margin: 0 auto; }
+  header, .question, #results {
+    background: #fff; border: 1px solid #d8dee8; border-radius: 12px;
+    padding: 18px; margin-bottom: 14px;
+  }
+  header { border-top: 5px solid #b58a35; }
+  h1 { margin: 0 0 6px; font-size: 1.55rem; }
+  .signature { margin-top: 12px; color: #8a641f; font-weight: bold; letter-spacing: .4px; }
+  .question h2 { font-size: 1rem; margin: 0 0 10px; }
+  label { display: block; padding: 7px 9px; margin: 4px 0; border-radius: 7px; cursor: pointer; }
+  label:hover { background: #f4f6f9; }
+  input { margin-right: 8px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+  button { border: 0; border-radius: 8px; padding: 12px 18px; font-size: 1rem; font-weight: bold; cursor: pointer; }
+  #submitBtn { background: #b58a35; color: white; }
+  #resetBtn { background: #e5e7eb; color: #1f2937; }
+  #results { display: none; border-left: 5px solid #b58a35; }
+  .correct { color: #147d45; font-weight: bold; }
+  .incorrect { color: #b42318; font-weight: bold; }
+  .review-item { border-top: 1px solid #e5e7eb; padding: 10px 0; }
+  @media (max-width: 520px) { body { padding: 10px; } header, .question, #results { padding: 14px; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Grade 10 Physics — Unit 1: Vector Quantities</h1>
+  <p>25 questions · Medium level · Choose one answer for each question. Unanswered questions receive zero.</p>
+  <div class="signature">𝕹𝖆𝖙𝖎 𝕯𝖆𝖞𝖛𝖔𝖓</div>
+</header>
+
+<form id="quizForm">
+<section class="question">
+<h2>1. A vector quantity has both magnitude and direction. (True/False)</h2>
+<label><input type="radio" name="q1" value="T">True</label><label><input type="radio" name="q1" value="F">False</label>
+</section>
+<section class="question">
+<h2>2. Displacement is a vector quantity. (True/False)</h2>
+<label><input type="radio" name="q2" value="T">True</label><label><input type="radio" name="q2" value="F">False</label>
+</section>
+<section class="question">
+<h2>3. Speed is a vector quantity. (True/False)</h2>
+<label><input type="radio" name="q3" value="T">True</label><label><input type="radio" name="q3" value="F">False</label>
+</section>
+<section class="question">
+<h2>4. Two vectors are equal if they have the same magnitude and direction. (True/False)</h2>
+<label><input type="radio" name="q4" value="T">True</label><label><input type="radio" name="q4" value="F">False</label>
+</section>
+<section class="question">
+<h2>5. The negative of a vector has the same magnitude but the opposite direction. (True/False)</h2>
+<label><input type="radio" name="q5" value="T">True</label><label><input type="radio" name="q5" value="F">False</label>
+</section>
+
+<section class="question"><h2>6. A person walks 12 m east and then 8 m east. What is the resultant displacement?</h2>
+<label><input type="radio" name="q6" value="A">A. 4 m east</label><label><input type="radio" name="q6" value="B">B. 20 m east</label><label><input type="radio" name="q6" value="C">C. 20 m west</label><label><input type="radio" name="q6" value="D">D. 96 m east</label></section>
+<section class="question"><h2>7. Which of the following is a scalar quantity?</h2>
+<label><input type="radio" name="q7" value="A">A. Displacement</label><label><input type="radio" name="q7" value="B">B. Velocity</label><label><input type="radio" name="q7" value="C">C. Distance</label><label><input type="radio" name="q7" value="D">D. Acceleration</label></section>
+<section class="question"><h2>8. Which information is needed to describe a vector fully?</h2>
+<label><input type="radio" name="q8" value="A">A. Magnitude and direction</label><label><input type="radio" name="q8" value="B">B. Magnitude only</label><label><input type="radio" name="q8" value="C">C. Direction only</label><label><input type="radio" name="q8" value="D">D. Unit only</label></section>
+<section class="question"><h2>9. A unit vector has a magnitude of:</h2>
+<label><input type="radio" name="q9" value="A">A. Zero</label><label><input type="radio" name="q9" value="B">B. One</label><label><input type="radio" name="q9" value="C">C. Two</label><label><input type="radio" name="q9" value="D">D. Any value</label></section>
+<section class="question"><h2>10. If two vectors have equal magnitude but opposite directions, their sum is:</h2>
+<label><input type="radio" name="q10" value="A">A. Equal to either vector</label><label><input type="radio" name="q10" value="B">B. Twice either vector</label><label><input type="radio" name="q10" value="C">C. Zero</label><label><input type="radio" name="q10" value="D">D. Always perpendicular</label></section>
+<section class="question"><h2>11. Two perpendicular vectors have magnitudes 5 N and 12 N. What is the magnitude of their resultant?</h2>
+<label><input type="radio" name="q11" value="A">A. 7 N</label><label><input type="radio" name="q11" value="B">B. 13 N</label><label><input type="radio" name="q11" value="C">C. 17 N</label><label><input type="radio" name="q11" value="D">D. 60 N</label></section>
+<section class="question"><h2>12. A vector of 10 m east is added to a vector of 4 m west. What is the resultant?</h2>
+<label><input type="radio" name="q12" value="A">A. 14 m east</label><label><input type="radio" name="q12" value="B">B. 14 m west</label><label><input type="radio" name="q12" value="C">C. 6 m east</label><label><input type="radio" name="q12" value="D">D. 6 m west</label></section>
+<section class="question"><h2>13. Two perpendicular vectors are 6 N and 8 N. What is the resultant magnitude?</h2>
+<label><input type="radio" name="q13" value="A">A. 2 N</label><label><input type="radio" name="q13" value="B">B. 14 N</label><label><input type="radio" name="q13" value="C">C. 10 N</label><label><input type="radio" name="q13" value="D">D. 48 N</label></section>
+<section class="question"><h2>14. Vector subtraction can be performed by:</h2>
+<label><input type="radio" name="q14" value="A">A. Adding the negative of the vector being subtracted</label><label><input type="radio" name="q14" value="B">B. Adding magnitudes only in every case</label><label><input type="radio" name="q14" value="C">C. Ignoring directions</label><label><input type="radio" name="q14" value="D">D. Multiplying the vectors</label></section>
+<section class="question"><h2>15. Two vectors act in the same direction and have magnitudes 11 N and 8 N. Their resultant is:</h2>
+<label><input type="radio" name="q15" value="A">A. 3 N</label><label><input type="radio" name="q15" value="B">B. 19 N</label><label><input type="radio" name="q15" value="C">C. 88 N</label><label><input type="radio" name="q15" value="D">D. 0 N</label></section>
+<section class="question"><h2>16. Two opposite vectors have magnitudes 9 N and 4 N. What is the magnitude of their resultant?</h2>
+<label><input type="radio" name="q16" value="A">A. 13 N</label><label><input type="radio" name="q16" value="B">B. 36 N</label><label><input type="radio" name="q16" value="C">C. 5 N</label><label><input type="radio" name="q16" value="D">D. 0 N</label></section>
+<section class="question"><h2>17. Which graphical method represents two vectors using a triangle placed head-to-tail?</h2>
+<label><input type="radio" name="q17" value="A">A. Component method</label><label><input type="radio" name="q17" value="B">B. Triangle method</label><label><input type="radio" name="q17" value="C">C. Rectangle method</label><label><input type="radio" name="q17" value="D">D. Scalar method</label></section>
+<section class="question"><h2>18. Which method is useful for adding three or more vectors graphically?</h2>
+<label><input type="radio" name="q18" value="A">A. Polygon method</label><label><input type="radio" name="q18" value="B">B. Division method</label><label><input type="radio" name="q18" value="C">C. Scalar method</label><label><input type="radio" name="q18" value="D">D. Unit method</label></section>
+<section class="question"><h2>19. In a scale drawing of a vector, what should be preserved?</h2>
+<label><input type="radio" name="q19" value="A">A. Its length-to-scale and its direction</label><label><input type="radio" name="q19" value="B">B. Only its colour</label><label><input type="radio" name="q19" value="C">C. Only the paper size</label><label><input type="radio" name="q19" value="D">D. Neither magnitude nor direction</label></section>
+<section class="question"><h2>20. In the head-to-tail method, the resultant is drawn from:</h2>
+<label><input type="radio" name="q20" value="A">A. The head of the first vector to the head of the last</label><label><input type="radio" name="q20" value="B">B. The tail of the first vector to the head of the last</label><label><input type="radio" name="q20" value="C">C. The tail of the last vector to the head of the first</label><label><input type="radio" name="q20" value="D">D. The midpoint of each vector</label></section>
+<section class="question"><h2>21. A vector can be represented by perpendicular components along the coordinate axes. These are called:</h2>
+<label><input type="radio" name="q21" value="A">A. Scalar parts</label><label><input type="radio" name="q21" value="B">B. Unit values</label><label><input type="radio" name="q21" value="C">C. Vector components</label><label><input type="radio" name="q21" value="D">D. Resultant units</label></section>
+<section class="question"><h2>22. If a vector of magnitude A makes an angle θ with the positive x-axis, its x-component is:</h2>
+<label><input type="radio" name="q22" value="A">A. A sin θ</label><label><input type="radio" name="q22" value="B">B. A cos θ</label><label><input type="radio" name="q22" value="C">C. A tan θ</label><label><input type="radio" name="q22" value="D">D. A / cos θ</label></section>
+<section class="question"><h2>23. A vector of magnitude 10 N makes an angle of 30° with the positive x-axis. What is its x-component? (cos 30° ≈ 0.866)</h2>
+<label><input type="radio" name="q23" value="A">A. 5 N</label><label><input type="radio" name="q23" value="B">B. 8.66 N</label><label><input type="radio" name="q23" value="C">C. 10 N</label><label><input type="radio" name="q23" value="D">D. 17.32 N</label></section>
+<section class="question"><h2>24. A 13 m vector has a horizontal component of 12 m. If its components are perpendicular, what is the magnitude of its vertical component?</h2>
+<label><input type="radio" name="q24" value="A">A. 1 m</label><label><input type="radio" name="q24" value="B">B. 12 m</label><label><input type="radio" name="q24" value="C">C. 5 m</label><label><input type="radio" name="q24" value="D">D. 25 m</label></section>
+<section class="question"><h2>25. A 3 m vector east and a 4 m vector north are added. What is the magnitude of the resultant?</h2>
+<label><input type="radio" name="q25" value="A">A. 1 m</label><label><input type="radio" name="q25" value="B">B. 7 m</label><label><input type="radio" name="q25" value="C">C. 12 m</label><label><input type="radio" name="q25" value="D">D. 5 m</label></section>
+
+<div class="actions">
+<button id="submitBtn" type="submit">Submit Answers</button>
+<button id="resetBtn" type="button">Reset Quiz</button>
+</div>
+</form>
+<section id="results" aria-live="polite"></section>
+</main>
+<script>
+(function () {
+  "use strict";
+  const answers = {
+    q1:"T", q2:"T", q3:"F", q4:"T", q5:"T",
+    q6:"B", q7:"C", q8:"A", q9:"B", q10:"C",
+    q11:"B", q12:"C", q13:"C", q14:"A", q15:"B",
+    q16:"C", q17:"B", q18:"A", q19:"A", q20:"B",
+    q21:"C", q22:"B", q23:"B", q24:"C", q25:"D"
+  };
+  const explanations = {
+    q1:"A vector has both magnitude and direction.",
+    q2:"Displacement includes magnitude and direction.",
+    q3:"Speed is scalar; it has magnitude only.",
+    q4:"Equal vectors have the same magnitude and direction.",
+    q5:"A negative vector has equal magnitude but opposite direction.",
+    q6:"Same-direction displacements add: 12 + 8 = 20 m east.",
+    q7:"Distance is scalar.",
+    q8:"A vector is specified by magnitude and direction.",
+    q9:"A unit vector has magnitude one.",
+    q10:"Equal and opposite vectors cancel to zero.",
+    q11:"For perpendicular vectors: √(5² + 12²) = 13 N.",
+    q12:"Opposite directions subtract: 10 − 4 = 6 m east.",
+    q13:"√(6² + 8²) = 10 N.",
+    q14:"A − B = A + (−B).",
+    q15:"Same-direction vectors add: 11 + 8 = 19 N.",
+    q16:"Opposite vectors subtract: 9 − 4 = 5 N.",
+    q17:"The triangle method joins two vectors head-to-tail.",
+    q18:"The polygon method can add multiple vectors head-to-tail.",
+    q19:"A scale drawing preserves direction and represents magnitude by scale.",
+    q20:"The resultant joins the first tail to the final head.",
+    q21:"These are called vector components.",
+    q22:"The x-component is A cos θ when θ is measured from the positive x-axis.",
+    q23:"10 cos 30° ≈ 8.66 N.",
+    q24:"√(13² − 12²) = √25 = 5 m.",
+    q25:"√(3² + 4²) = 5 m."
+  };
+  const form = document.getElementById("quizForm");
+  const results = document.getElementById("results");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let score = 0;
+    let answered = 0;
+    let review = "";
+    for (let i = 1; i <= 25; i++) {
+      const name = "q" + i;
+      const selected = form.querySelector('input[name="' + name + '"]:checked');
+      if (selected) answered++;
+      const correct = selected && selected.value === answers[name];
+      if (correct) score++;
+      const chosenText = selected
+        ? selected.parentElement.textContent.trim()
+        : "Not answered";
+      const correctInput = form.querySelector('input[name="' + name + '"][value="' + answers[name] + '"]');
+      const correctText = correctInput.parentElement.textContent.trim();
+      review += '<div class="review-item"><strong>Q' + i + '.</strong> ' +
+        (correct ? '<span class="correct">Correct</span>' : '<span class="incorrect">' + (selected ? 'Incorrect' : 'Unanswered') + '</span>') +
+        '<br>Your answer: ' + chosenText +
+        '<br>Correct answer: ' + correctText +
+        '<br>' + explanations[name] + '</div>';
+    }
+    results.innerHTML = '<h2>Quiz Results</h2><p><strong>Score: ' + score +
+      ' / 25 (' + Math.round(score / 25 * 100) + '%)</strong></p><p>Answered: ' +
+      answered + ' / 25</p><h3>Answer review</h3>' + review;
+    results.style.display = "block";
+    results.scrollIntoView({ behavior: "auto", block: "start" });
+  });
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    form.reset();
+    results.innerHTML = "";
+    results.style.display = "none";
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
+</body>
+</html>
